@@ -1,2 +1,15 @@
 <h1>Revolutionary Net Art</h1>
 <h2>by nick</h2>
+
+<script>
+	
+  async function main () {
+    const data = await fetch('wrds1.txt')
+    let words = await data.text()
+    words = words.split('\n')
+    console.log(words)
+  }
+
+  main()
+  
+</script>
